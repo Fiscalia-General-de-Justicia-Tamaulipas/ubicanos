@@ -28,7 +28,7 @@
 
 .site-footer .footer-logo {
     display: block;
-    width: 68px;
+    width: 98px;
     height: auto;
 }
 
@@ -136,12 +136,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .root {
-        height: auto;
-        min-height: 100vh;
-        grid-template-rows: 64px 50px minmax(0, 1fr) auto;
-    }
-
     .site-footer {
         display: block;
     }
@@ -169,10 +163,21 @@
     }
 }
 
+.office-marker {
+    background: #575756;
+    border: 2px solid #dadada;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 70%);
+}
+
 .bg-gray-700 {
     background-color: #575756;
 }
 
 .custom-grid {
     grid-template-columns: 1fr 50rem;
+}
+
+.leaflet-container a {
+    color: #575756;
 }

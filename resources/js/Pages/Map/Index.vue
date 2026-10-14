@@ -32,7 +32,7 @@ onMounted(()=>{
 })
 
 function initializeMap() {
-    
+
     // * load map
     map.value = L.map('map', {
         center: L.latLng( props.centerMap[0], props.centerMap[1]),
@@ -129,16 +129,17 @@ function drawMarkers(locations){
 
             var marker = L.marker( L.latLng( location.geolocation[0], location.geolocation[1]),{
                 title: location.name,
-                icon: L.icon({
-                    iconUrl: 'https://maps.google.com/mapfiles/ms/icons/gray-dot.png',
-                    iconSize: [24, 24]
+                icon: L.divIcon({
+                    className: 'office-marker',
+                    iconSize: [16, 16],
+                    iconAnchor: [8, 8]
                 }),
                 opacity: .75,
                 riseOnHover: true
             })
             .addTo(map.value)
             .bindPopup(`<b style="text-transform:uppercase;">${location.name}</b><p>${location.address}</p>
-            <a href="https://www.google.com/maps?q=${location.geolocation[0]},${location.geolocation[1]}" target="_blank" style="text-align: right; display: block;">Ver en Google Maps</a>
+            <a href="https://www.google.com/maps?q=${location.geolocation[0]},${location.geolocation[1]}" target="_blank" style="text-align: right; display: block; color: #575756;">Ver en Google Maps</a>
             `);
 
             marker.on('click', handleMarkerOnClick);
@@ -257,8 +258,8 @@ function scrollElementIntoView(cvegeo){
                 <div id="map" class="w-full h-full" />
 
             </div>
-            
+
         </div>
-        
+
     </AuthenticatedLayout>
 </template>

@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 </script>
 
 <template>
-    <div class="root w-full min-h-screen grid grid-rows-[64px_50px_minmax(0,1fr)_auto]">
+    <div class="root w-full h-screen overflow-hidden grid grid-rows-[64px_50px_minmax(0,1fr)_auto]">
 
         <nav class="w-full bg-white border-b border-gray-100">
             <!-- Primary Navigation Menu -->
@@ -173,7 +173,7 @@ const currentYear = new Date().getFullYear();
         </header>
 
         <!-- Page Content -->
-        <main :class="[ $slots.header ?'row-span-1' :'row-span-2' ]" >
+        <main class="min-h-0" :class="[ $slots.header ?'row-span-1' :'row-span-2' ]" >
             <slot />
         </main>
 
