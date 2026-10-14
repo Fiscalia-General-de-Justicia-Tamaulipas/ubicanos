@@ -129,9 +129,10 @@ function drawMarkers(locations){
 
             var marker = L.marker( L.latLng( location.geolocation[0], location.geolocation[1]),{
                 title: location.name,
-                icon: L.icon({
-                    iconUrl: 'https://maps.google.com/mapfiles/ms/icons/gray-dot.png',
-                    iconSize: [24, 24]
+                icon: L.divIcon({
+                    className: 'office-marker',
+                    iconSize: [16, 16],
+                    iconAnchor: [8, 8]
                 }),
                 opacity: .75,
                 riseOnHover: true
