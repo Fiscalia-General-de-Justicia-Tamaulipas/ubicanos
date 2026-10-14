@@ -87,7 +87,7 @@ function onRemoveTag(index){
         <div class="col-span-3">
             <CardTitle>Etiquetas</CardTitle>
 
-            <div class="flex items-center bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full dark:bg-gray-700 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 min-h-10">
+            <div class="flex items-center bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-[#878787] focus:border-[#878787] w-full dark:bg-gray-700 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#878787] dark:focus:border-[#878787] min-h-10">
 
                 <div v-for="(tag, i) in tags" :key="i" class="mx-1 bg-emerald-600 text-white text-xs p-2 rounded-lg flex items-center h-[1.5rem] w-fit">
                     <div class="w-fit line-clamp-1 break-keep">{{ tag }}</div>

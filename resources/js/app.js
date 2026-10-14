@@ -1,6 +1,9 @@
 import './bootstrap';
 import '../css/app.css';
 import 'leaflet/dist/leaflet.css';
+import '@fontsource/figtree/400.css';
+import '@fontsource/figtree/500.css';
+import '@fontsource/figtree/600.css';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';

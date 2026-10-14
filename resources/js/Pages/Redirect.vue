@@ -18,7 +18,7 @@ onMounted(()=>{
     <Head title="Dashboard" />
 
     <GuestLayout>
-        <div class="h-full bg-gradient-to-bl from-[#374151] to-[#1b2341] overflow-y-clip flex text-white ">
+        <div class="h-full bg-gradient-to-bl from-[#878787] to-[#575756] overflow-y-clip flex text-white ">
             
             <div class="flex items-center w-full">
 
