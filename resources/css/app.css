@@ -4,86 +4,173 @@
 
 
 /* Footer */
+.site-footer {
+    background: linear-gradient(90deg, #575756, #878787);
+}
 
-footer .footer-link {
-    transition: .3s ease-in;
+.site-footer .container-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 150px minmax(0, 1fr) 280px;
+    gap: 28px;
+    margin: 0 auto;
+    max-width: 1080px;
+    min-height: 168px;
+    padding: 20px 16px;
+}
+
+.site-footer .footer-brand,
+.site-footer .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-footer .footer-logo {
+    display: block;
+    width: 68px;
+    height: auto;
+}
+
+.site-footer .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dadada;
+    font-size: 0.8rem;
     text-align: center;
 }
 
-footer .address a, footer .footer-link, footer .social-media a {
-    color: #d3d3d3;
-    text-decoration: none
+.site-footer .address h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
-footer {
-    background: #111633;
-    background: linear-gradient(90deg,#111633 0,#111633 10%,#4a4a4a 40%,#4a4a4a 100%);
-    height: 120px
+.site-footer .address p {
+    margin: 0;
 }
 
-footer .address {
-    color: #d3d3d3;
-    font-size: .8rem
+.site-footer .address a,
+.site-footer .footer-link,
+.site-footer .social-media a {
+    color: #dadada;
+    text-decoration: none;
 }
 
-footer .address h3 {
-    margin-bottom: .5rem;
-    font-size: .9rem
-}
-
-footer .container-grid {
-    display: grid;
+.site-footer .phone {
+    display: inline-flex;
     align-items: center;
-    height: 100%;
-    grid-template-columns: 1fr 50% 1fr;
-    margin: 0 auto;
-    max-width: 1080px
+    gap: 0.55rem;
+    margin: 0.55rem 0 0.4rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid rgb(218 218 218 / 45%);
+    border-radius: 999px;
+    font-size: 0.95rem;
 }
 
-footer .social-media a {
-    margin: 10px
+.site-footer .phone svg {
+    width: 1rem;
+    height: 1rem;
 }
 
-footer .social-media a svg {
-    height: 2rem;
+.site-footer .footer-credit {
+    font-weight: 600;
+}
+
+.site-footer .footer-links {
+    flex-direction: column;
+}
+
+.site-footer .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 0.65rem;
+}
+
+.site-footer .social-media a svg {
+    display: block;
     width: 2rem;
-    transition: .3s ease-in
+    height: 2rem;
+    fill: currentColor;
+    transition: color 0.2s ease-in, transform 0.2s ease-in;
 }
 
-footer .social-media a .facebook:hover {
-    fill: #1877F2
+.site-footer .social-media a:hover svg {
+    color: #fff;
+    transform: translateY(-2px);
 }
 
-footer .social-media a .instagram:hover {
-    fill: #E4405F
+.site-footer .footer-link {
+    font-size: 1.1rem;
+    text-align: center;
+    transition: color 0.2s ease-in;
 }
 
-footer .social-media a .twitter:hover {
-    fill: #000000
+.site-footer .footer-link:hover {
+    color: #fff;
 }
 
-footer .footer-logo {
-    width: 100px
+.site-footer .footer-legal {
+    margin-top: 0.7rem;
+    color: #dadada;
+    font-size: 0.65rem;
+    line-height: 1.5;
+    text-align: center;
 }
 
-footer .footer-link:hover {
-    color: #62cbe5
+.site-footer .footer-legal p {
+    margin: 0;
+}
+
+.site-footer .footer-legal a {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-footer .footer-legal a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
     .root {
-        grid-template-rows: 64px 50px calc(100% - 114px);
+        height: auto;
+        min-height: 100vh;
+        grid-template-rows: 64px 50px minmax(0, 1fr) auto;
     }
 
-    footer {
-        display: none;
-        position: relative;
-        height: auto;
+    .site-footer {
+        display: block;
+    }
+
+    .site-footer .container-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.25rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .site-footer .footer-logo {
+        width: 58px;
+    }
+
+    .site-footer .address {
+        max-width: 34rem;
+    }
+
+    .site-footer .address h3 {
+        font-size: 0.95rem;
+    }
+
+    .site-footer .social-media {
+        gap: 14px;
     }
 }
 
 .bg-gray-700 {
-    background-color: rgb(51 65 85);
+    background-color: #575756;
 }
 
 .custom-grid {

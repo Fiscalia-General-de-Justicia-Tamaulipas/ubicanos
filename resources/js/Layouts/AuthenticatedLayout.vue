@@ -11,7 +11,7 @@ const showingNavigationDropdown = ref(false);
 </script>
 
 <template>
-    
+
     <div class="h-screen bg-slate-50 grid" style="grid-template-rows: 4rem 4rem 1fr">
 
         <nav class="bg-white border-b border-gray-100">
@@ -23,7 +23,7 @@ const showingNavigationDropdown = ref(false);
                         <!-- Logo -->
                         <div class="shrink-0 flex items-center">
                             <a href="http://fiscaliadigital.fgjtam.gob.mx/" target="_blank">
-                                <img src="/images/logo.png" class="block h-12 w-auto fill-current" />
+                                <img src="/images/fiscaliadigitallogogris.png" class="block h-12 w-auto fill-current" />
                             </a>
                         </div>
 

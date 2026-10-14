@@ -73,11 +73,11 @@ function initializeMap() {
 function drawGeometries(){
     props.municipalitiesGeom.forEach(element => {
         var polygon = L.polygon( element.geometry, {
-            color: "#0c1f4a",
+            color: "#575756",
             weight: 1,
             opacity: .5,
             fill: true,
-            fillColor: "#2A3B67",
+            fillColor: "#878787",
             fillOpacity: .05
         }).addTo(map.value);
         polygon.data = element.properties;
@@ -135,7 +135,7 @@ function drawMarkers(locations){
             var marker = L.marker( L.latLng( location.geolocation[0], location.geolocation[1]),{
                 title: location.name,
                 icon: L.icon({
-                    iconUrl: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                    iconUrl: 'https://maps.google.com/mapfiles/ms/icons/gray-dot.png',
                     iconSize: [24, 24]
                 }),
                 opacity: .75,
